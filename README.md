@@ -7,7 +7,7 @@ Due to the limitation of environment and time. This work just finish the trainin
 
 Environment
 ---
-The code running with python 3.6 on Ubuntu 16.04.6. NVIDIA GPUs are needed. The code is trained and tested using a NVIDIA 1080Ti GPU cards.
+The code running with python 3.6 on Ubuntu 16.04.6. NVIDIA GPUs are needed. The code is trained and tested by using a NVIDIA 1080Ti GPU cards.
 
 Main Result
 ---
