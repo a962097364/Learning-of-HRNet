@@ -32,7 +32,7 @@ All the operations and models can be downloaded from this URL:
 https://github.com/leoxiaobin/deep-high-resolution-net.pytorch
 
 ## Visualization
-
+### Visualizing predictions on COCO val
 ![](https://github.com/a962097364/LearningofHRNet/blob/main/%7BPOSE_ROOT%7D/figure/resultsscore_584_id_12639_000000012639.png)
 ![](https://github.com/a962097364/LearningofHRNet/blob/main/%7BPOSE_ROOT%7D/figure/resultsscore_614_id_138639_000000138639.png)
 ![](https://github.com/a962097364/LearningofHRNet/blob/main/%7BPOSE_ROOT%7D/figure/resultsscore_734_id_3156_000000003156.png)
