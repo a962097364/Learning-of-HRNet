@@ -21,7 +21,7 @@ Main Result
  | pose_hrnet_w32 | 0.744 | 0.905 | 0.819 | 0.708 | 0.810 | 0.798 | 0.942 | 0.865 | 0.757 | 0.858 |
  
  **Note:**
- Due to the limitation of experiment environment, it will spend about a week to train the code with Epoch is 210. I changed the number of Epoch from 210 to 50. There is some difference between this solution and the origin solution.
+ Due to the limitation of experiment environment, it will spend about a week to train the code with Epoch is 210. I changed the number of Epoch from 210 to 50. There are some difference between this solution and the origin solution.
  
 Description of important files and folds
 ---
