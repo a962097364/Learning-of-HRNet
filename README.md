@@ -14,11 +14,11 @@ Main Result
 ### Results on MPII val
  | Arch | Head | Shoulder | Elbow | Wrist | Hip | Knee | Ankle | Mean | Mean@0.1 |
  |---|---|---|---|---|---|---|---|---|---|
- | pose_hrnet | 97.101 | 95.941 | 90.336 | 86.449 | 89.095 | 87.084 | 83.278 | 90.330 | 37.702 |
+ | pose_hrnet_w32 | 97.101 | 95.941 | 90.336 | 86.449 | 89.095 | 87.084 | 83.278 | 90.330 | 37.702 |
 ### Results on COCO_val2017_detections_AP_H_56_person
  | Arch | AP | Ap .5 | AP .75 | AP (M) | AP (L) | AR | AR .5 | AR .75 | AR (M) | AR (L) |
  |---|---|---|---|---|---|---|---|---|---|---|
- | pose_hrnet | 0.744 | 0.905 | 0.819 | 0.708 | 0.810 | 0.798 | 0.942 | 0.865 | 0.757 | 0.858 |
+ | pose_hrnet_w32 | 0.744 | 0.905 | 0.819 | 0.708 | 0.810 | 0.798 | 0.942 | 0.865 | 0.757 | 0.858 |
  
  **Note:**
  Due to the limitation of experiment environment, it will spend about a week to train the code with Epoch is 210. I changed the number of Epoch from 210 to 50. There is some difference between this solution and the origin solution.
