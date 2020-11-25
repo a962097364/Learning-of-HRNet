@@ -2,9 +2,8 @@
 ## Introduction
 This is a simulation experiment of HRNet. The main purpose of the repository is just for me to learn some basic knowledge about human pose estimiation, Linux and pytorch. 
 If you want to browse the origin of HRNet
-You can click this URL:
-
-https://github.com/leoxiaobin/deep-high-resolution-net.pytorch
+You can click this URL:<br>https://github.com/leoxiaobin/deep-high-resolution-net.pytorch<br>
+Due to the limitation of environment and time. This work just finish the training and testing of MPII with Epoch==210 by using HRNet and training and testing of COCO with Epoch==50 by using HRNet w32.
 
 Environment
 ---
@@ -26,7 +25,7 @@ Main Result
  
 Description of important files and folds
 ---
-**{POSE_ROOT}:** The root directory<br>**tools:** Store codes for training and testinng<br>**experiments::** Store modols of nets. The method to use these models in training and testing can be found from the URL below:<br>https://github.com/leoxiaobin/deep-high-resolution-net.pytorch<br>**visualization:** Store code for visualization<br>**mpiioutput:** Store the training progress file **w32_256x256_adam_lr1e-3_2020-11-22-08-54_train.log** and test result file **w32_256x256_adam_lr1e-3_2020-11-23-10-32_valid.log**
+**{POSE_ROOT}:** The root directory<br>**tools:** Store codes for training and testinng<br>**experiments::** Store modols of nets. The method to use these models in training and testing can be found from the URL below:<br>https://github.com/leoxiaobin/deep-high-resolution-net.pytorch<br>**visualization:** Store code for visualization<br>**mpiioutput:** Store the training progress file **w32_256x256_adam_lr1e-3_2020-11-22-08-54_train.log** and test result file **w32_256x256_adam_lr1e-3_2020-11-23-10-32_valid.log** of mpii dataset<br>**cocoputput:** Store the training progress file **w32_256x192_adam_lr1e-3_2020-11-23-14-16_train.log** and testing result file **w32_256x192_adam_lr1e-3_2020-11-25-08-50_valid.log** pf coco dataset<br>
 
 ## Quick Start
 All the operations and models can be downloaded from this URL:
