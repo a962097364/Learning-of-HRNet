@@ -1,6 +1,6 @@
 # Learning of HRNet
 ## Introduction
-This is a simulation experiment of HRNet. The main purpose of the repository is just for me to learn some basic knowledge about human pose estimiation, Linux and pytorch. 
+This is a simulation experiment of HRNet. The main purpose of the repository is just for learning some basic knowledge about human pose estimiation, Linux and pytorch. 
 If you want to browse the origin of HRNet
 You can click this URL:<br>https://github.com/leoxiaobin/deep-high-resolution-net.pytorch<br>
 Due to the limitation of environment and time. This work just finish the training and testing of MPII with Epoch==210 by using HRNet and training and testing of COCO with Epoch==50 by using HRNet w32.<br>It will be updated in the future.
