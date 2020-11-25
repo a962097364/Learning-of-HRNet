@@ -1,0 +1,146 @@
+2020-11-25 08:50:35,214 Namespace(cfg='experiments/coco/hrnet/w32_256x192_adam_lr1e-3.yaml', dataDir='', logDir='', modelDir='', opts=['TEST.MODEL_FILE', 'models/pytorch/pose_coco/pose_hrnet_w32_256x192.pth', 'TEST.USE_GT_BBOX', 'False'], prevModelDir='')
+2020-11-25 08:50:35,214 AUTO_RESUME: True
+CUDNN:
+  BENCHMARK: True
+  DETERMINISTIC: False
+  ENABLED: True
+DATASET:
+  COLOR_RGB: True
+  DATASET: coco
+  DATA_FORMAT: jpg
+  FLIP: True
+  HYBRID_JOINTS_TYPE: 
+  NUM_JOINTS_HALF_BODY: 8
+  PROB_HALF_BODY: 0.3
+  ROOT: data/coco/
+  ROT_FACTOR: 45
+  SCALE_FACTOR: 0.35
+  SELECT_DATA: False
+  TEST_SET: val2017
+  TRAIN_SET: train2017
+DATA_DIR: 
+DEBUG:
+  DEBUG: True
+  SAVE_BATCH_IMAGES_GT: True
+  SAVE_BATCH_IMAGES_PRED: True
+  SAVE_HEATMAPS_GT: True
+  SAVE_HEATMAPS_PRED: True
+GPUS: (0,)
+LOG_DIR: log
+LOSS:
+  TOPK: 8
+  USE_DIFFERENT_JOINTS_WEIGHT: False
+  USE_OHKM: False
+  USE_TARGET_WEIGHT: True
+MODEL:
+  EXTRA:
+    FINAL_CONV_KERNEL: 1
+    PRETRAINED_LAYERS: ['conv1', 'bn1', 'conv2', 'bn2', 'layer1', 'transition1', 'stage2', 'transition2', 'stage3', 'transition3', 'stage4']
+    STAGE2:
+      BLOCK: BASIC
+      FUSE_METHOD: SUM
+      NUM_BLOCKS: [4, 4]
+      NUM_BRANCHES: 2
+      NUM_CHANNELS: [32, 64]
+      NUM_MODULES: 1
+    STAGE3:
+      BLOCK: BASIC
+      FUSE_METHOD: SUM
+      NUM_BLOCKS: [4, 4, 4]
+      NUM_BRANCHES: 3
+      NUM_CHANNELS: [32, 64, 128]
+      NUM_MODULES: 4
+    STAGE4:
+      BLOCK: BASIC
+      FUSE_METHOD: SUM
+      NUM_BLOCKS: [4, 4, 4, 4]
+      NUM_BRANCHES: 4
+      NUM_CHANNELS: [32, 64, 128, 256]
+      NUM_MODULES: 3
+  HEATMAP_SIZE: [48, 64]
+  IMAGE_SIZE: [192, 256]
+  INIT_WEIGHTS: True
+  NAME: pose_hrnet
+  NUM_JOINTS: 17
+  PRETRAINED: models/pytorch/imagenet/hrnet_w32-36af842e.pth
+  SIGMA: 2
+  TAG_PER_JOINT: True
+  TARGET_TYPE: gaussian
+OUTPUT_DIR: output
+PIN_MEMORY: True
+PRINT_FREQ: 100
+RANK: 0
+TEST:
+  BATCH_SIZE_PER_GPU: 32
+  BBOX_THRE: 1.0
+  COCO_BBOX_FILE: data/coco/person_detection_results/COCO_val2017_detections_AP_H_56_person.json
+  FLIP_TEST: True
+  IMAGE_THRE: 0.0
+  IN_VIS_THRE: 0.2
+  MODEL_FILE: models/pytorch/pose_coco/pose_hrnet_w32_256x192.pth
+  NMS_THRE: 1.0
+  OKS_THRE: 0.9
+  POST_PROCESS: True
+  SHIFT_HEATMAP: True
+  SOFT_NMS: False
+  USE_GT_BBOX: False
+TRAIN:
+  BATCH_SIZE_PER_GPU: 32
+  BEGIN_EPOCH: 0
+  CHECKPOINT: 
+  END_EPOCH: 50
+  GAMMA1: 0.99
+  GAMMA2: 0.0
+  LR: 0.001
+  LR_FACTOR: 0.1
+  LR_STEP: [170, 200]
+  MOMENTUM: 0.9
+  NESTEROV: False
+  OPTIMIZER: adam
+  RESUME: False
+  SHUFFLE: True
+  WD: 0.0001
+WORKERS: 24
+2020-11-25 08:50:35,549 => loading model from models/pytorch/pose_coco/pose_hrnet_w32_256x192.pth
+2020-11-25 08:50:39,315 => classes: ['__background__', 'person']
+2020-11-25 08:50:39,315 => num_images: 5000
+2020-11-25 08:50:43,839 => Total boxes: 104125
+2020-11-25 08:50:45,895 => Total boxes after fliter low score@0.0: 104125
+2020-11-25 08:50:45,920 => load 104125 samples
+2020-11-25 08:50:52,138 Test: [0/3254]	Time 5.997 (5.997)	Loss 0.0000 (0.0000)	Accuracy 0.000 (0.000)
+2020-11-25 08:51:25,983 Test: [100/3254]	Time 0.293 (0.396)	Loss 0.0001 (0.0001)	Accuracy 0.000 (0.005)
+2020-11-25 08:51:57,502 Test: [200/3254]	Time 0.326 (0.356)	Loss 0.0000 (0.0001)	Accuracy 0.000 (0.003)
+2020-11-25 08:52:29,003 Test: [300/3254]	Time 0.317 (0.342)	Loss 0.0000 (0.0001)	Accuracy 0.000 (0.002)
+2020-11-25 08:53:00,426 Test: [400/3254]	Time 0.358 (0.335)	Loss 0.0000 (0.0001)	Accuracy 0.000 (0.003)
+2020-11-25 08:53:31,956 Test: [500/3254]	Time 0.299 (0.331)	Loss 0.0002 (0.0001)	Accuracy 0.000 (0.003)
+2020-11-25 08:54:03,425 Test: [600/3254]	Time 0.288 (0.329)	Loss 0.0000 (0.0001)	Accuracy 0.000 (0.003)
+2020-11-25 08:54:35,079 Test: [700/3254]	Time 0.343 (0.327)	Loss 0.0004 (0.0001)	Accuracy 0.029 (0.003)
+2020-11-25 08:55:06,600 Test: [800/3254]	Time 0.304 (0.325)	Loss 0.0003 (0.0001)	Accuracy 0.000 (0.004)
+2020-11-25 08:55:38,260 Test: [900/3254]	Time 0.334 (0.324)	Loss 0.0001 (0.0001)	Accuracy 0.000 (0.004)
+2020-11-25 08:56:09,763 Test: [1000/3254]	Time 0.326 (0.323)	Loss 0.0000 (0.0001)	Accuracy 0.000 (0.003)
+2020-11-25 08:56:41,328 Test: [1100/3254]	Time 0.335 (0.323)	Loss 0.0003 (0.0001)	Accuracy 0.000 (0.003)
+2020-11-25 08:57:12,830 Test: [1200/3254]	Time 0.293 (0.322)	Loss 0.0000 (0.0001)	Accuracy 0.000 (0.003)
+2020-11-25 08:57:44,181 Test: [1300/3254]	Time 0.280 (0.321)	Loss 0.0000 (0.0001)	Accuracy 0.000 (0.003)
+2020-11-25 08:58:15,725 Test: [1400/3254]	Time 0.323 (0.321)	Loss 0.0000 (0.0001)	Accuracy 0.000 (0.003)
+2020-11-25 08:58:47,132 Test: [1500/3254]	Time 0.320 (0.321)	Loss 0.0011 (0.0001)	Accuracy 0.005 (0.003)
+2020-11-25 08:59:18,694 Test: [1600/3254]	Time 0.320 (0.320)	Loss 0.0000 (0.0001)	Accuracy 0.000 (0.003)
+2020-11-25 08:59:50,313 Test: [1700/3254]	Time 0.290 (0.320)	Loss 0.0000 (0.0001)	Accuracy 0.000 (0.003)
+2020-11-25 09:00:21,802 Test: [1800/3254]	Time 0.292 (0.320)	Loss 0.0000 (0.0001)	Accuracy 0.000 (0.004)
+2020-11-25 09:00:53,456 Test: [1900/3254]	Time 0.299 (0.320)	Loss 0.0000 (0.0001)	Accuracy 0.000 (0.004)
+2020-11-25 09:01:24,861 Test: [2000/3254]	Time 0.299 (0.319)	Loss 0.0000 (0.0001)	Accuracy 0.000 (0.004)
+2020-11-25 09:01:56,701 Test: [2100/3254]	Time 0.293 (0.319)	Loss 0.0000 (0.0001)	Accuracy 0.000 (0.003)
+2020-11-25 09:02:28,410 Test: [2200/3254]	Time 0.306 (0.319)	Loss 0.0001 (0.0001)	Accuracy 0.000 (0.003)
+2020-11-25 09:02:59,878 Test: [2300/3254]	Time 0.288 (0.319)	Loss 0.0000 (0.0001)	Accuracy 0.000 (0.003)
+2020-11-25 09:03:31,421 Test: [2400/3254]	Time 0.313 (0.319)	Loss 0.0000 (0.0001)	Accuracy 0.000 (0.003)
+2020-11-25 09:04:03,530 Test: [2500/3254]	Time 0.291 (0.319)	Loss 0.0002 (0.0001)	Accuracy 0.000 (0.003)
+2020-11-25 09:04:35,032 Test: [2600/3254]	Time 0.300 (0.319)	Loss 0.0011 (0.0001)	Accuracy 0.000 (0.003)
+2020-11-25 09:05:07,290 Test: [2700/3254]	Time 0.325 (0.319)	Loss 0.0000 (0.0001)	Accuracy 0.000 (0.003)
+2020-11-25 09:05:39,083 Test: [2800/3254]	Time 0.312 (0.319)	Loss 0.0018 (0.0001)	Accuracy 0.000 (0.003)
+2020-11-25 09:06:11,064 Test: [2900/3254]	Time 0.299 (0.319)	Loss 0.0002 (0.0001)	Accuracy 0.000 (0.003)
+2020-11-25 09:06:42,445 Test: [3000/3254]	Time 0.315 (0.319)	Loss 0.0004 (0.0001)	Accuracy 0.000 (0.003)
+2020-11-25 09:07:13,955 Test: [3100/3254]	Time 0.319 (0.319)	Loss 0.0000 (0.0001)	Accuracy 0.000 (0.003)
+2020-11-25 09:07:45,925 Test: [3200/3254]	Time 0.312 (0.319)	Loss 0.0009 (0.0001)	Accuracy 0.059 (0.003)
+2020-11-25 09:08:46,405 => writing results json to output/coco/pose_hrnet/w32_256x192_adam_lr1e-3/results/keypoints_val2017_results_0.json
+2020-11-25 09:10:14,039 | Arch | AP | Ap .5 | AP .75 | AP (M) | AP (L) | AR | AR .5 | AR .75 | AR (M) | AR (L) |
+2020-11-25 09:10:14,045 |---|---|---|---|---|---|---|---|---|---|---|
+2020-11-25 09:10:14,046 | pose_hrnet | 0.744 | 0.905 | 0.819 | 0.708 | 0.810 | 0.798 | 0.942 | 0.865 | 0.757 | 0.858 |
