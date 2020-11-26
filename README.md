@@ -54,7 +54,10 @@ Some frames may rise to 0.45-0.50
 ### Output results of 20 persons
 The origin of video:https://www.bilibili.com/video/BV1M54y1k7cB?from=search&seid=7462601590228835064<br>
 The inference time per frame will be 0.30 sec to 0.40 sec.<br>
-![]()
+![](https://github.com/a962097364/Learning-of-HRNet/blob/main/%7BPOSE_ROOT%7D/demo/10.png)
+![](https://github.com/a962097364/Learning-of-HRNet/blob/main/%7BPOSE_ROOT%7D/demo/11.png)
+Some frames may rise to 0.60-0.70
+![](https://github.com/a962097364/Learning-of-HRNet/blob/main/%7BPOSE_ROOT%7D/demo/12.png)
 ### Output results of more than 50 persons
 Actually, the result of more than 50 persons is not good. The ability of detection is growing weaker.
 The inference time per frame will be 0.20 sec to 0.25 sec.<br>
