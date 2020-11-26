@@ -77,4 +77,5 @@ Also, we can see, if some person who is blocked or sheltered by others in the fi
 Therefore, it has some change of time when the number of persons is rising.<br>
 Also, the effections of efficiency made by blocking should be resolved.
 The ability of dection when the number of people is more than 50 should be solved, too.
+The most important for human pose estimation, is to raise the ability of detection and the precision.
 
