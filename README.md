@@ -65,8 +65,8 @@ The origin of video2:https://www.bilibili.com/video/BV1As411N74f?t=38
 ![](https://github.com/a962097364/Learning-of-HRNet/blob/main/%7BPOSE_ROOT%7D/demo/6.png)
 ![](https://github.com/a962097364/Learning-of-HRNet/blob/main/%7BPOSE_ROOT%7D/demo/9.png)
 ### Compairation
-So, we can see, it doesn't rise too much when the number of person rise from 1~5 to 5~10.Just about 0.05~ 0.1 sec<br>
-When the number of people rise from 5~10 to 10~20, the time increases by 0.10~0.15 sec.<br>
+So, we can see, it doesn't rise too much when the number of person rise from 1 person to 5 persons to 5 persons to 10 persons.Just about 0.05~ 0.1 sec<br>
+When the number of people rise from 5 persons to 10 persons to 10 persons to 20 persons, the time increases by 0.10~0.15 sec.<br>
 The increasement of time is not to much but it exists.<br>
 Also, we can see, if some person who is blocked or sheltered by others in the first frame, and appear in the next frame, the time will rise a lot.
 ![](https://github.com/a962097364/Learning-of-HRNet/blob/main/%7BPOSE_ROOT%7D/demo/4.png)
