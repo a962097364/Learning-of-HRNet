@@ -45,16 +45,15 @@ The inference time per frame will be 0.15 sec to 0.17 sec.<br>
 The origin of video:https://www.bilibili.com/video/BV1G54y1S7ec?from=search&seid=10955257765089295267
 ![](https://github.com/a962097364/Learning-of-HRNet/blob/main/%7BPOSE_ROOT%7D/demo/1.png)
 ![](https://github.com/a962097364/Learning-of-HRNet/blob/main/%7BPOSE_ROOT%7D/demo/2.png)
-### Output results of more than 10 persons
+### Output results about 5-10 persons
 The inference time per frame will be 0.20 sec to 0.25 sec.<br>
 The origin of video:https://www.bilibili.com/video/BV1Cz411i7wd?from=search&seid=9549336185157582037
 ![](https://github.com/a962097364/Learning-of-HRNet/blob/main/%7BPOSE_ROOT%7D/demo/3.png)
 Some frames may rise to 0.45-0.50
 ![](https://github.com/a962097364/Learning-of-HRNet/blob/main/%7BPOSE_ROOT%7D/demo/5.png)
-### Output results of 20 persons
+### Output results about 15~20 persons
 The origin of video:https://www.bilibili.com/video/BV1M54y1k7cB?from=search&seid=7462601590228835064<br>
 The inference time per frame will be 0.30 sec to 0.40 sec.<br>
-![](https://github.com/a962097364/Learning-of-HRNet/blob/main/%7BPOSE_ROOT%7D/demo/10.png)
 ![](https://github.com/a962097364/Learning-of-HRNet/blob/main/%7BPOSE_ROOT%7D/demo/11.png)
 Some frames may rise to 0.60-0.70
 ![](https://github.com/a962097364/Learning-of-HRNet/blob/main/%7BPOSE_ROOT%7D/demo/12.png)
@@ -65,4 +64,17 @@ The origin of video1:https://www.bilibili.com/video/BV1wJ41127jV?t=138
 The origin of video2:https://www.bilibili.com/video/BV1As411N74f?t=38
 ![](https://github.com/a962097364/Learning-of-HRNet/blob/main/%7BPOSE_ROOT%7D/demo/6.png)
 ![](https://github.com/a962097364/Learning-of-HRNet/blob/main/%7BPOSE_ROOT%7D/demo/9.png)
+### Compairation
+So, we can see, it doesn't rise too much when the number of person rise from 1~5 to 5~10.Just about 0.05~ 0.1 sec<br>
+When the number of people rise from 5~10 to 10~20, the time increases by 0.10~0.15 sec.<br>
+The increasement of time is not to much but it exists.<br>
+Also, we can see, if some person who is blocked or sheltered by others in the first frame, and appear in the next frame, the time will rise a lot.
+![](https://github.com/a962097364/Learning-of-HRNet/blob/main/%7BPOSE_ROOT%7D/demo/4.png)
+![](https://github.com/a962097364/Learning-of-HRNet/blob/main/%7BPOSE_ROOT%7D/demo/5.png)
+![](https://github.com/a962097364/Learning-of-HRNet/blob/main/%7BPOSE_ROOT%7D/demo/11.png)
+![](https://github.com/a962097364/Learning-of-HRNet/blob/main/%7BPOSE_ROOT%7D/demo/12.png)
+### Summary
+Therefore, it has some change of time when the number of persons is rising.<br>
+Also, the effections of efficiency made by blocking should be resolved.
+The ability of dection when the number of people is more than 50 should be solved, too.
 
