@@ -39,4 +39,16 @@ https://github.com/leoxiaobin/deep-high-resolution-net.pytorch
 ![](https://github.com/a962097364/LearningofHRNet/blob/main/%7BPOSE_ROOT%7D/figure/resultsscore_846_id_64718_000000064718.png)
 
 ## Conclusions from Demo 
-If use 
+**All the demo videos' fps==12**<br>
+### Output results of 1~5 persons
+The inference time per frame will be 0.15 sec to 0.17 sec.<br>
+The origin of video:https://www.bilibili.com/video/BV1G54y1S7ec?from=search&seid=10955257765089295267
+![](https://github.com/a962097364/Learning-of-HRNet/blob/main/%7BPOSE_ROOT%7D/demo/1.png)
+![](https://github.com/a962097364/Learning-of-HRNet/blob/main/%7BPOSE_ROOT%7D/demo/2.png)
+### Output results of more than 10 persons
+The inference time per frame will be 0.20 sec to 0.25 sec.<br>
+The origin of video:https://www.bilibili.com/video/BV1Cz411i7wd?from=search&seid=9549336185157582037
+![](https://github.com/a962097364/Learning-of-HRNet/blob/main/%7BPOSE_ROOT%7D/demo/3.png)
+### Output results of more than 50 persons
+
+
