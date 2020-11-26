@@ -25,7 +25,7 @@ Main Result
  
 Description of important files and folds
 ---
-**{POSE_ROOT}:** The root directory<br>**tools:** Store codes for training and testinng<br>**experiments::** Store modols of nets. The method to use these models in training and testing can be found from the URL below:<br>https://github.com/leoxiaobin/deep-high-resolution-net.pytorch<br>**visualization:** Store code for visualization<br>**mpiioutput:** Store the training progress file **w32_256x256_adam_lr1e-3_2020-11-22-08-54_train.log** and test result file **w32_256x256_adam_lr1e-3_2020-11-23-10-32_valid.log** of mpii dataset<br>**cocoputput:** Store the training progress file **w32_256x192_adam_lr1e-3_2020-11-23-14-16_train.log** and testing result file **w32_256x192_adam_lr1e-3_2020-11-25-08-50_valid.log** pf coco dataset<br>
+**{POSE_ROOT}:** The root directory<br>**tools:** Store codes for training and testinng<br>**experiments::** Store modols of nets. The method to use these models in training and testing can be found from the URL below:<br>https://github.com/leoxiaobin/deep-high-resolution-net.pytorch<br>**visualization:** Store code for visualization<br>**mpiioutput:** Store the training progress file **w32_256x256_adam_lr1e-3_2020-11-22-08-54_train.log** and test result file **w32_256x256_adam_lr1e-3_2020-11-23-10-32_valid.log** of mpii dataset<br>**cocoputput:** Store the training progress file **w32_256x192_adam_lr1e-3_2020-11-23-14-16_train.log** and testing result file **w32_256x192_adam_lr1e-3_2020-11-25-08-50_valid.log** pf coco dataset<br>**demo:** Store the demo code and some results.
 
 ## Quick Start
 All the operations and models can be downloaded from this URL:
@@ -37,3 +37,6 @@ https://github.com/leoxiaobin/deep-high-resolution-net.pytorch
 ![](https://github.com/a962097364/LearningofHRNet/blob/main/%7BPOSE_ROOT%7D/figure/resultsscore_614_id_138639_000000138639.png)
 ![](https://github.com/a962097364/LearningofHRNet/blob/main/%7BPOSE_ROOT%7D/figure/resultsscore_734_id_3156_000000003156.png)
 ![](https://github.com/a962097364/LearningofHRNet/blob/main/%7BPOSE_ROOT%7D/figure/resultsscore_846_id_64718_000000064718.png)
+
+## Conclusions from Demo 
+If use 
